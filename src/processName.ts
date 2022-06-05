@@ -3,10 +3,9 @@ import * as Types from './types';
 const delay = () =>
   new Promise((resolve) => {
     const timeout = setTimeout(() => {
+      clearTimeout(timeout);
       resolve(true);
-    }, 60000);
-
-    clearTimeout(timeout);
+    }, 10000);
   });
 
 process.on('message', async (params: Types.ChildProcessNameDelay) => {
