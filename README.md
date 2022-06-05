@@ -11,4 +11,4 @@ A simple example of how to use NodeJS child processes with ExpressJS
 
 `http://localhost:3000/process-name-delay?name=jake` for delayed name processing and then hit `http://localhost:3000/unblocked-process` to see unblocked process.
 
-You can also hit multiple routes `http://localhost:3000/process-name-delay?name=jake`, `http://localhost:3000/process-name-delay?name=bob` and `http://localhost:3000/process-name-delay?name=frank` for example and also still be able to hit `http://localhost:3000/unblocked-process` with it being unblocked.
+You can also hit multiple routes in new tabs `http://localhost:3000/process-name-delay?name=jake`, `http://localhost:3000/process-name-delay?name=bob` and `http://localhost:3000/process-name-delay?name=frank` for example while waiting for those tabs load and also still be able to hit `http://localhost:3000/unblocked-process` with it being unblocked.
