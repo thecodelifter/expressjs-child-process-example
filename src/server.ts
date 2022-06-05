@@ -29,7 +29,7 @@ app.get('/process-name-delay', async (req, res) => {
 });
 
 app.get('/unblocked-process', (_req, res) => {
-  res.send('I am able to be processed without being blocked');
+  res.json({ message: 'I am able to be processed without being blocked' });
 });
 
 app.listen(3000, () => console.log('listening on port 3000'));
