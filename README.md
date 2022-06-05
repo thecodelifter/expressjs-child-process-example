@@ -5,7 +5,7 @@ A simple example of how to use NodeJS child processes with ExpressJS
 ### Basic Commands
 
 - `npm install` (Installs all packages)
-- `npm build` (Starts Express Server)
+- `npm start` (Starts Express Server)
 
 ### Routes to use for testing
 
