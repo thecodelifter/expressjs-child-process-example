@@ -1,12 +1,11 @@
 import * as Types from './types';
 
-const delay = () => {
-  return new Promise((resolve) => {
+const delay = () =>
+  new Promise((resolve) => {
     setTimeout(() => {
       resolve(true);
-    }, 10000);
+    }, 60000);
   });
-};
 
 process.on('message', async (params: Types.ChildProcessNameDelay) => {
   await delay();
